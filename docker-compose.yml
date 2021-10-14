@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  asir_apachett:
+    image: internetsystemsconsortium/bind9:9.16
+    ports:
+      - 53:53
+    volumes:
+      -  config:/etc/bind
+      -  trabajo:/var/cache/bind
+      -  zonas:/var/lib/bind
+      -  log:/var/log
+volumes:
+  config:
+  trabajo: 
+  zonas:
+  log:
