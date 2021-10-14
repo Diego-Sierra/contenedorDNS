@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  asir_apachett:
+  asir_bind:
     image: internetsystemsconsortium/bind9:9.16
     ports:
       - 53:53
